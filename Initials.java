@@ -2,15 +2,17 @@ import java.util.*;
 
 /*
 
-Usage once compiled: 
-java Initials "input your string here"
-DO NOT forget the quotes, otherwise each word will be treated as a separate argument
+This program takes a string argument and returns initials.
 
-Output:
+Examples:
 For "annette last name" -> "A. L. Name"
 For "lastname" -> "Lastname"
 For "  this is my LaST NAME" -> "T. I. M. L. Name"
 For "" OR " " -> "N/A"
+
+Usage: 
+java Initials "input your string here"
+DO NOT forget the quotes, otherwise each word will be treated as a separate argument
 
 */
 
