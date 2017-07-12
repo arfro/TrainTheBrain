@@ -1,0 +1,38 @@
+public class RevertInPlace{
+
+	public static String revertInPlace(String string){
+		
+		if(string.length() == 0) return "";
+		
+		else if(string.length() == 1) return string;
+
+		else{
+			
+			char[] stringToChar = string.toCharArray();
+			
+			for(int i = 0; i < stringToChar.length/2; i++){
+				char temp;
+				System.out.println("Replacing " +stringToChar[i]+ " with "+stringToChar[stringToChar.length-1-i]);
+				temp = stringToChar[stringToChar.length-1-i];
+				stringToChar[stringToChar.length-1-i] = stringToChar[i];
+				stringToChar[i] = temp;
+			}
+			
+			return new String(stringToChar);
+		}
+		
+		
+	}
+
+
+	public static void main(String[] args){
+			
+			try{
+				System.out.println("Reverting string "+args[0]+". Done: "+revertInPlace(args[0]));
+			}catch(Exception e){
+				System.out.println("Possibly forgot an argument?");
+			}
+			
+	}
+
+}
