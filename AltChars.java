@@ -1,6 +1,7 @@
 /*
 
 This class takes a String input and returns boolean value based on whether vowels alternate with consonants
+String.matches() is not allowed to use
 e.g. 
 isAlt("macaroons") ---> false, will fail at second "o"
 isAlt("abababab") ---> true
