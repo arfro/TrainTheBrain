@@ -15,7 +15,7 @@ public class LinkedListFindMiddleElement{
 	
 	public Node find(){
 		//to be implemented
-		return null;
+		return new Node("");
 	}
 	
 	public boolean isEmpty(){
