@@ -1,6 +1,8 @@
 public class RotateString {
 
   public static String rotateString(String input, int rotationSteps){
+      if(rotationSteps <= 0 || rotationSteps == input.length) return input;
+    
       char[] charArr = input.toCharArray();
       char[] result = new char[input.length()];
       
