@@ -1,3 +1,11 @@
+/*
+
+Given a string ABCDE create a method that rotates the stirng by a given amount of rotation steps in a way that:
+rotateString("ABCDE", 2) returns "DEABC"
+rotateString("ABCDE", -2) returns "ABCDE"
+
+*/
+
 public class RotateString {
 
   public static String rotateString(String input, int rotationSteps){
